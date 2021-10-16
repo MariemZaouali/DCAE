@@ -1,0 +1,232 @@
+    1  git clone http://www.github.com/MariemZaouali/DCAE.git
+    2  ls
+    3  cd DCAE/
+    4  ls
+    5  mkdir Dataset
+    6  cd Dataset/
+    7  mkdir IP
+    8  mkdir PaviaU
+    9  cp ~/DCAE/Indian_pines_gt ~/DCAE/Dataset/IP
+   10  cd ..
+   11  cp ~/DCAE/Indian_pines_gt.mat ~/DCAE/Dataset/IP
+   12  cp ~/DCAE/PaviaU_gt.mat ~/DCAE/Dataset/PaviaU
+   13  sudo apt-get install python3
+   14  sudo apt-get install python3-pip
+   15  pip3 install gdown
+   16  cd Dataset/
+   17  cd IP
+   18  ls
+   19  gdown https://drive.google.com/file/d/1Mib9Yufr3PDWtRaVl4zWEWprNK15xXSn/view?usp=sharing
+   20  sudo gdown https://drive.google.com/file/d/1Mib9Yufr3PDWtRaVl4zWEWprNK15xXSn/view?usp=sharing
+   21  export PATH="/home/mariemzaouali/.local/bin:$PATH"
+   22  sudo gdown https://drive.google.com/file/d/1Mib9Yufr3PDWtRaVl4zWEWprNK15xXSn/view?usp=sharing
+   23  sudo gdown https://drive.google.com/file/d/1Mib9Yufr3PDWtRaVl4zWEWprNK15xXSn
+   24  which gdown
+   25  export PATH="/home/mariemzaouali/.local/bin/gdown:$PATH"
+   26  sudo gdown https://drive.google.com/file/d/1Mib9Yufr3PDWtRaVl4zWEWprNK15xXSn/view?usp=sharin
+   27  sudo gdown https://drive.google.com/file/d/1Mib9Yufr3PDWtRaVl4zWEWprNK15xXSn
+   28  export PATH="/home/mariemzaouali/.local/bin/gdown:$PATH"
+   29  sudo gdown https://drive.google.com/file/d/1Mib9Yufr3PDWtRaVl4zWEWprNK15xXSn
+   30  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zdtV9fAg8K58gHlrgRs74-dwri6vp5Uj' -O indian_all_fmm.mat
+   31  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zdtV9fAg8K58gHlrgRs74-dwri6vp5Uj' -O test_fisher_indian90.mat
+   32  ls
+   33  cd ..
+   34  cd PaviaU/
+   35  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16D5ti9HUMVjjWyR660-3z403DpdBvu3N' -O test_fisher_paviaU50.mat
+   36  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16D5ti9HUMVjjWyR660-3z403DpdBvu3N' -O paviaU_all_fmm.mat
+   37  ls
+   38  cd ..
+   39  ls
+   40  pip3 install -r requirements.txt 
+   41  python3 script.py
+   42  pip3 install numpy
+   43  python3 script.py
+   44  pip3 install scipy
+   45  python3 script.py
+   46  pip3 install torch torchvision torchaudio
+   47  python3 script.py
+   48  pip3 install skimage
+   49  pip3 install scikit-image
+   50  pip3 install scikit-learn
+   51  python3 script.py
+   52  pip3 install seaborn
+   53  python3 script.py
+   54  pip3 install spectral
+   55  python3 script.py
+   56  pip3 install visdom
+   57  python3 script.py
+   58  pip3 install tensorflow
+   59  python3 script.py
+   60  cd ~/DCAE/Dataset/IP
+   61  python3 "data1 = load('Indian_pines_gt.mat');"
+   62  ls
+   63  python "data1 = load('Indian_pines_gt.mat');"
+   64  python3
+   65  cd /home
+   66  cd 
+   67  ls
+   68  cd DCAE/
+   69  wget https://github.com/MariemZaouali/DCAE/blob/main/script.py
+   70  rm script.py
+   71  rm script.py.1
+   72  wget https://github.com/MariemZaouali/DCAE/blob/main/script.py
+   73  ls
+   74  python3 script.py 
+   75  python3 script.py
+   76  rm script.py
+   77  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+   78  python3 script.py
+   79  cd DCAE/
+   80  python3 script.py
+   81  pip3 install mat73
+   82  rm script.py
+   83  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+   84  python3 script.py
+   85  cd  ./Dataset/IP/
+   86  ls
+   87  cd ..
+   88  rm script.py
+   89* 
+   90  python3 script.py
+   91  rm script.py
+   92  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+   93  python3 script.py
+   94  rm script.py 
+   95  ls
+   96  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+   97  python3 script.py
+   98  rm script.py 
+   99  ls
+  100  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  101  python3 script.py
+  102  rm script.py 
+  103  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  104  python3 script.py
+  105  rm script.py 
+  106  ls
+  107  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  108  rm script.py.1
+  109  python3 script.py
+  110  rm script.py.1
+  111  rm script.py
+  112  python3 script.py
+  113  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  114  python3 script.py
+  115  rm script.py
+  116  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  117  vim script.py
+  118  rm script.py
+  119  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  120  rm script.py
+  121  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  122  vim script.py
+  123  cd Dataset/
+  124  rm -r IP
+  125  rm -r PaviaU
+  126  mkdir IP
+  127  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zdtV9fAg8K58gHlrgRs74-dwri6vp5Uj' -O test_fisher_indian90.mat
+  128  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zdtV9fAg8K58gHlrgRs74-dwri6vp5Uj' -O Indian_pines_gt.mat
+  129  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zdtV9fAg8K58gHlrgRs74-dwri6vp5Uj' -O indian_all_fmm.mat
+  130  ls
+  131  cp  Indian_pines_gt.mat IP/
+  132  cp indian_all_fmm.mat IP/
+  133  cp test_fisher_indian90.mat IP/
+  134  cd IP
+  135  ls
+  136  cd ..
+  137  mkdir PaviaU
+  138  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16D5ti9HUMVjjWyR660-3z403DpdBvu3N' -O test_fisher_paviaU50.mat
+  139  cd PaviaU
+  140  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16D5ti9HUMVjjWyR660-3z403DpdBvu3N' -O test_fisher_paviaU50.mat
+  141  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16D5ti9HUMVjjWyR660-3z403DpdBvu3N' -O PaviaU_gt.mat
+  142  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16D5ti9HUMVjjWyR660-3z403DpdBvu3N' -O paviaU_all_fmm.mat
+  143  cd ./D
+  144  cd ./DCAE
+  145  cd ~/DCAE
+  146  ls
+  147  python3 script.py
+  148  rm script.py
+  149  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  150  python3 script.py
+  151  cd Dataset/
+  152  cd .
+  153  cd ..
+  154  rm Dataset/
+  155  rm -r Dataset/
+  156  mkdir Dataset
+  157  cd Dataset/
+  158  mkdir IP
+  159  mkdir PaviaU
+  160  cd IP
+  161  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zdtV9fAg8K58gHlrgRs74-dwri6vp5Uj' -O Indian_pines_gt.mat
+  162  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zdtV9fAg8K58gHlrgRs74-dwri6vp5Uj' -O indian_all_fmm.mat
+  163  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zdtV9fAg8K58gHlrgRs74-dwri6vp5Uj' -O test_fisher_indian90.mat
+  164  ls
+  165  cd ..
+  166  cd PaviaU/
+  167  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16D5ti9HUMVjjWyR660-3z403DpdBvu3N' -O paviaU_all_fmm.mat
+  168  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16D5ti9HUMVjjWyR660-3z403DpdBvu3N' -O test_fisher_paviaU50.mat
+  169  ls
+  170  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16D5ti9HUMVjjWyR660-3z403DpdBvu3N' -O PaviaU_gt.mat
+  171  ls
+  172  cd ~/DCAE/
+  173  ls
+  174  python3 script.py
+  175  rm -r Dataset/
+  176  mkdir Dataset
+  177  cd Dataset/
+  178  mkdir IP
+  179  mkdir PaviaU
+  180  cd ..
+  181  ls
+  182  rm script.py
+  183  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  184  pip3 install hdf5storage
+  185  cd IP
+  186  cd /Dataset
+  187  ls
+  188  cd Dataset/
+  189  ls
+  190  cd IP
+  191  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zdtV9fAg8K58gHlrgRs74-dwri6vp5Uj' -O Indian_pines_gt.mat 
+  192  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S-NnIS-DVDfM1JMIypRreDjkPQa5laq7' -O Indian_pines_gt.mat 
+  193  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S-NnIS-DVDfM1JMIypRreDjkPQa5laq7' -O indian_fmm_all.mat 
+  194  rm indian_fmm_all.mat
+  195  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S-NnIS-DVDfM1JMIypRreDjkPQa5laq7' -O indian_all_fmm.mat 
+  196  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S-NnIS-DVDfM1JMIypRreDjkPQa5laq7' -O test_fisher_indian90.mat
+  197  cd ..
+  198  cd PaviaU
+  199  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Abl8dk0eSghzpt6nGrHH7HnHS91PPSXM' -O PaviaU_gt.mat
+  200  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Abl8dk0eSghzpt6nGrHH7HnHS91PPSXM' -O test_fisher_paviaU50.mat
+  201  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Abl8dk0eSghzpt6nGrHH7HnHS91PPSXM' -O paviaU_all_fmm.mat
+  202  cd ~/DCAE
+  203  python3 script.py
+  204  pip3 install hdf5storage
+  205  pip install hdf5storage
+  206  rm script.py
+  207  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  208  python3 script.py
+  209  python script.py
+  210  pip3 install collections
+  211  pip3 install  iterable-collections
+  212  rm script.py
+  213  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  214  python3 script.py
+  215  rm script.py
+  216  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  217  python3 script.py
+  218  rm script.py
+  219  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  220  python3 script.py
+  221  rm script.py
+  222  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  223  python3 script.py
+  224  rm script.py
+  225  python3 script.py
+  226  wget https://raw.githubusercontent.com/MariemZaouali/DCAE/main/script.py
+  227  python3 script.py
+  228  python script.py
+  229  sudo apt-get install python-is-python3
+  230  python script.py
+  231  raise ValueError('Unknown mat file type, version %s, %s' % ret)
+  232  history > backup_command.txt
