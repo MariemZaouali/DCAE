@@ -39,6 +39,7 @@ from sklearn.cluster import DBSCAN
 
 #utils
 # -*- coding: utf-8 -*-
+import hdf5storage
 import random
 import numpy as np
 from sklearn.metrics import confusion_matrix
@@ -53,6 +54,21 @@ import imageio
 import os
 import re
 import torch
+import abc
+from copy import copy
+from math import ceil
+from os import PathLike
+from random import shuffle
+from itertools import product
+from collections import Iterable
+
+import torch
+import numpy as np
+from typing import List
+from tensorflow.keras.utils import to_categorical
+
+
+
 
 def get_device(ordinal):
     # Use GPU ?
@@ -524,7 +540,7 @@ def load_data(path: os.PathLike):
     if path.endswith(".npy"):
         data = np.load(path)
     elif path.endswith(".mat"):
-        mat = loadmat(path)
+        mat = hdf5storage.loadmat(path)#io.loadmat(path)
         for key in mat.keys():
             if "__" not in key:
                 data = mat[key]
@@ -555,20 +571,6 @@ def save_to_csv(path: os.PathLike, to_save: Iterable, mode: str='a'):
     csv.close()
 
 #data_structures
-import abc
-from copy import copy
-from math import ceil
-from os import PathLike
-from random import shuffle
-from itertools import product
-from collections import Iterable
-
-import torch
-import numpy as np
-from typing import List
-from tensorflow.keras.utils import to_categorical
-
-
 
 HEIGHT = 0
 WIDTH = 1
@@ -1446,10 +1448,11 @@ class ClusteringLayer(nn.Module):
     
 
 if __name__ == '__main__':
-	device = 'cuda:0'
+	print('Change torch.device(cpu) to cuda')
+	device = torch.device('cpu')#'cuda:0'
 	out_path_L = [r'./IP_results',r'./IPf_results',r'./PU_results',r'./PUf_results']#r"./"
-	data_set_img=[r"./Dataset/IP/indian_all_fmm.npy",r"./Dataset/IP/test_fisher_indian90.npy",r"./Dataset/PaviaU/paviaU_all_fmm.npy",r"./Dataset/PaviaU/test_fisher_paviaU50.npy"]
-	data_set_gt=[r"./Dataset/IP/Indian_pines_gt.npy",r"./Dataset/PaviaU/PaviaU_gt.npy"]
+	data_set_img=[r"./Dataset/IP/indian_all_fmm.mat",r"./Dataset/IP/test_fisher_indian90.mat",r"./Dataset/PaviaU/paviaU_all_fmm.mat",r"./Dataset/PaviaU/test_fisher_paviaU50.mat"]
+	data_set_gt=[r"./Dataset/IP/Indian_pines_gt.mat",r"./Dataset/PaviaU/PaviaU_gt.mat"]
 			# Example for the Houston dataset
 	dataset_bands_L = [392,180,392,100]#70
 	neighborhood_size = 5
