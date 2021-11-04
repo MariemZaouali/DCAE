@@ -1496,6 +1496,6 @@ if __name__ == '__main__':
 		net.train_model(data_loader, optimizer, epochs=epochs, iterations=iterations, gamma=0.1)
 
 				# Predict
-		net.load_state_dict(torch.load(out_path + "/model_path.pt"))
+		net.load_state_dict(torch.load(out_path + "/best_autoencoder_model.pt"))
 		predicted_labels = net.cluster_with_model(data_loader)
 		net.plot_high_res(predicted_labels, dataset.original_2d_shape, -1, "model")
