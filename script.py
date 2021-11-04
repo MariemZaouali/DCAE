@@ -1466,7 +1466,7 @@ if __name__ == '__main__':
 
 
 	l=[0]#,0]#,1,1]
-	l2=[1]range(0,2)
+	l2=[1]#range(0,2)
 	for i_gt,i in zip(l,l2):
 		out_path=out_path_L[i]
 		dataset_bands = dataset_bands_L[i]
