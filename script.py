@@ -1476,7 +1476,7 @@ if __name__ == '__main__':
 		update_interval = int(samples_count / batch_size)
 		iterations = int(update_interval * epochs) # This indicates the number of epochs that the clustering part of the autoencoder will be trained for
 
-			
+		print("dataset bands",dataset_bands)	
 		dataset = HyperspectralCube(data_set_img[i],data_set_gt[i_gt], # Path to .npy file or np.ndarray with [HEIGHT, WIDTH, BANDS] dimensions
 											neighbourhood_size=neighborhood_size,
 											device=device, bands=dataset_bands)
