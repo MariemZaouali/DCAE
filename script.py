@@ -540,11 +540,12 @@ def load_data(path: os.PathLike):
     if path.endswith(".npy"):
         data = np.load(path)
     elif path.endswith(".mat"):
-        mat = hdf5storage.loadmat(path)#io.loadmat(path)
-        for key in mat.keys():
-            if "__" not in key:
-                data = mat[key]
-                break
+	data=np.loadtxt(path)
+        #mat = hdf5storage.loadmat(path)#io.loadmat(path)
+        #for key in mat.keys():
+         #   if "__" not in key:
+         #       data = mat[key]
+          #      break
     else:
         raise ValueError("This file type is not supported")
     print("data returned",data.shape)
