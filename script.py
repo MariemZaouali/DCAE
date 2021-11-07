@@ -538,14 +538,13 @@ def load_data(path: os.PathLike):
     :return: numpy array with loaded data
     """
     if path.endswith(".npy"):
-        data = np.load(path)
+        data = np.load(path,allow_pickle=True)
     elif path.endswith(".mat"):
-		data = np.loadtxt(path)
-        #mat = hdf5storage.loadmat(path)#io.loadmat(path)
-        #for key in mat.keys():
-         #   if "__" not in key:
-         #       data = mat[key]
-         #      break
+        mat = hdf5storage.loadmat(path)#io.loadmat(path)
+        for key in mat.keys():
+            if "__" not in key:
+                data = mat[key]
+                break
     else:
         raise ValueError("This file type is not supported")
     print("data returned",data.shape)
