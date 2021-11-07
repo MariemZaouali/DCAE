@@ -538,7 +538,7 @@ def load_data(path: os.PathLike):
     :return: numpy array with loaded data
     """
     if path.endswith(".npy"):
-        data = np.load(path,allow_pickle=True)
+        data = np.load(path)
     elif path.endswith(".mat"):
         mat = hdf5storage.loadmat(path)#io.loadmat(path)
         for key in mat.keys():
