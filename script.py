@@ -1451,10 +1451,10 @@ if __name__ == '__main__':
 	print('Change torch.device(cpu) to cuda')
 	device ='cuda:0'
 	out_path_L = [r'./IP_results',r'./IPf_results',r'./PU_results',r'./PUf_results']#r"./"
-	data_set_img=[r"./Dataset/IP/indian_all_fmm.npy",r"./Dataset/IP/test_fisher_indian90.npy",r"./Dataset/PaviaU/paviaU_all_fmm.npy",r"./Dataset/PaviaU/test_fisher_paviaU50.npy"]
+	data_set_img=[r"./Dataset/IP/indian_all_fmm.npy",r"./Dataset/IP/test_fisher_indian90.npy",r"./Dataset/PaviaU/paviaU_all_fmm.npy",r"./Dataset/PaviaU/test_fisher_paviaU90.npy"]
 	data_set_gt=[r"./Dataset/IP/Indian_pines_gt.npy",r"./Dataset/PaviaU/PaviaU_gt.npy"]
 			# Example for the Houston dataset
-	dataset_bands_L = [392,180,392,100]#70
+	dataset_bands_L = [392,180,392,180]#70
 	neighborhood_size = 5
 	epochs = 25
 
